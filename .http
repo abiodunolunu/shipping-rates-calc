@@ -1,0 +1,28 @@
+POST https://sandbox-api.postmen.com/v3/tools/shipping-rates
+Content-Type: application/json
+    
+     {
+        ship_from: {
+          country: "USA",
+          postal_code: "75001",
+        },
+        ship_to: {
+          country: "NGA",
+          postal_code: "10001",
+        },
+        slug: "usps-discounted",
+        ship_date: "2021-09-13",
+        box_type: "custom_package",
+        dimension: {
+          depth: 1,
+          width: 1,
+          height: 1,
+          unit: "in",
+        },
+        weight: {
+          value: 0.5,
+          unit: "lb",
+        },
+      }
+
+###
